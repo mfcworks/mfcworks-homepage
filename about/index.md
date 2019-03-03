@@ -1,37 +1,32 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About
+tags: [about]
+date: 2019-01-01
 comments: false
 ---
-    
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## About me
+* 名前: Forte
+* 誕生日: 9/28
+* 仕事: 制御屋
+* 趣味: プログラミング、映画鑑賞、音楽、ドライブ
 
-## Preview
+## Languages (Currently)
+* C/C++
+* HSP
+* Ruby
+* Haskell
+* Go
+* VBScript/VBA
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+## Languages (Past)
+* C#
+* Java
+* MATLAB
+* Mathematica
+* CoffeeScript/TypeScript
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+## 当サイトについて
+* 目的：知識の整理・体系化および共有
+* 不定期更新。
