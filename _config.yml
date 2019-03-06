@@ -62,6 +62,8 @@ twitter:            username
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
+redmine-url: http://redmine.maison-de-forte.ml
+gitlab-url: http://gitlab.maison-de-forte.ml
 
 # Gems
 gems:
