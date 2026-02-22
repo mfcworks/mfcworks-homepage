@@ -30,7 +30,7 @@ useHead({
                     <SocialLinks />
                   <hr class="hr-line">
                   <h3 class="title">
-                         <a class="btn zoombtn" href="/about">
+                         <a class="btn zoombtn" href="/about/">
                          About
                          </a>
                          <a class="btn zoombtn" :href="site.blog_url">

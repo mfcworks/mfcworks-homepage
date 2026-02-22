@@ -6,12 +6,13 @@ export default defineAppConfig({
     locale: "ja_JP",
     logo: "/img/logo.png",
     background: "/img/placeholder-big.jpg",
-    email: "info@mfcworks.com",
+    email: "contact@mfcworks.com",
     twitter: "mfcworks",
     github: "mfcworks",
-    linkedin: "mfcworks",
+    // linkedin: "mfcworks",
     instagram: "",
     youtube: "",
-    gitlab: ""
+    gitlab: "",
+    blog_url: "https://blog.mfcworks.com"
   }
 })
