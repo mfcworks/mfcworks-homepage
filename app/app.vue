@@ -1,13 +1,21 @@
 <script setup>
-const app = useAppConfig()
+useHead({
+  style: [`
+    body {
+      background-image:url('/img/placeholder-big.jpg');
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }`
+  ]
+})
 </script>
 
 <template>
-  <div :style="{ backgroundImage: `url(${app.site.background})` }">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-    <!-- <NuxtRouteAnnouncer />
-    <NuxtWelcome /> -->
-  </div>
+  <NuxtPage />
 </template>
+
+<style>
+#__nuxt {
+  height: 100%;
+}
+</style>

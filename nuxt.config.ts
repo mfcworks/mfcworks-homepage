@@ -4,5 +4,4 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/scss/main.scss'],
 
-  vite: {server: {watch: {usePolling: true}}}
 })
