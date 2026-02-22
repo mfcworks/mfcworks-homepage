@@ -4,6 +4,7 @@ title: About
 tags: [about]
 date: 2019-01-01
 comments: false
+feature: 'http://i.imgur.com/Ds6S7lJ.png'
 ---
 
 ## About me

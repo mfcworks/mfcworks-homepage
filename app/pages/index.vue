@@ -13,11 +13,11 @@ useHead({
     <header class="header flex" role="banner">
         <div class="container animated fadeIn">
             <div class="row">
-                    <a :href="site.url">
+                    <a href="/">
                         <img :src="site.logo" class="img-circle zoombtn animated rotateIn">
                     </a>
                     <h3 class="title">
-                        <a class="zoombtn" :href="site.url">
+                        <a class="zoombtn" href="/">
                         	<p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
 			            </a>
                     </h3>
