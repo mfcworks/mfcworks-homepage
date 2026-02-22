@@ -3,13 +3,13 @@ const { site } = useAppConfig()
 
 const { data: page } = await useAsyncData('about', () => queryCollection('content').path('/about/').first())
 
-useHead({
-  style: [`
-    .feature {
-      background-image: url(${page.value.feature});
-    }`
-  ]
-})
+// useHead({
+//   style: [`
+//     .feature {
+//       background-image: url(${page.value.feature});
+//     }`
+//   ]
+// })
 </script>
 
 <template>
