@@ -12,7 +12,7 @@ const date_to_string = (date: string | undefined) => date
 </script>
 
 <template>
-  <Navigation />
+  <!-- <Navigation /> -->
   <!-- Header -->
   <header class="header" role="banner">
     <div class="wrapper animated fadeIn">

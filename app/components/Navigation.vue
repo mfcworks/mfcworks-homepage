@@ -120,7 +120,7 @@ const { site, navigation } = useAppConfig()
         <ul class="dl-submenu">
           <li class="dl-back"><a hreef="#">Back</a></li>
           <li><a href="/posts/">All Posts</a></li>
-          <li><a href="/tags/">All Tags</a></li>
+          <!-- <li><a href="/tags/">All Tags</a></li> -->
         </ul>
       </li>
       <li v-for="link in navigation">

@@ -10,7 +10,7 @@ const page = {
 </script>
 
 <template>
-  <Navigation />
+  <!-- <Navigation /> -->
   <!-- Header -->
   <header class="header" role="banner">
     <div class="wrapper animated fadeIn">
@@ -39,7 +39,10 @@ const page = {
         </ul>
         <h2 id="preview">Preview</h2>
         <figure class="half">
-          <a href="https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png"><img src="https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png" alt="" /></a> <a href="https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png"><img src="https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png" alt="" /></a> 
+          <a href="https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png" class="image-popup">
+            <img src="https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png" alt="" /></a>
+          <a href="https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png" class="image-popup">
+            <img src="https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png" alt="" /></a> 
           <figcaption>Screenshots of Moon Theme</figcaption>
         </figure>
         <p>See a <a href="http://TolgaTatli.github.io/Moonrise">live version of Moon</a> hosted on GitHub.</p>
