@@ -12,7 +12,7 @@ const { site, navigation } = useAppConfig()
         <ul class="dl-submenu">
           <li class="dl-back"><a hreef="#">Back</a></li>
           <li>
-            <img :src="`${site.url}/${site.logo}`" :alt="`${site.title} photo`" class="author-photo">
+            <img :src="`${site.logo}`" :alt="`${site.title} photo`" class="author-photo">
             <h4>{{ site.title }}</h4>
             <p>{{ site.description }}</p>
           </li>
@@ -124,9 +124,8 @@ const { site, navigation } = useAppConfig()
         </ul>
       </li>
       <li v-for="link in navigation">
-        <a v-if="link.url.includes('http')" :href="`${link.url.includes('http') ? '' : site.url}${link.url}`" target="_blank"
-          rel="noopener noreferrer">{{ link.title }}</a>
-        <a v-else :href="`${link.url.includes('http') ? '' : site.url}${link.url}`">{{ link.title }}</a>
+        <a v-if="link.url.includes('http')" :href="link.url" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
+        <a v-else :href="link.url">{{ link.title }}</a>
       </li>
     </ul><!-- /.dl-menu -->
   </nav><!-- /.dl-menuwrapper -->

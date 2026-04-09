@@ -54,6 +54,6 @@ export default defineAppConfig({
 
   // Site navigation links
   navigation: [
-    { title: 'Projects', url: '/projects' },
+    { title: 'Projects', url: '/projects/' },
   ]
 })
