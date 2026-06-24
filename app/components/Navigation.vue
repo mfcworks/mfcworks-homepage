@@ -6,7 +6,7 @@ const { site, navigation } = useAppConfig()
   <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
     <button class="dl-trigger">Open Menu</button>
     <ul class="dl-menu">
-      <li><a :href="`${site.url}/`">Home</a></li>
+      <li><a :href="`${site.url}`">Home</a></li>
       <li>
         <a href="#">About</a>
         <ul class="dl-submenu">

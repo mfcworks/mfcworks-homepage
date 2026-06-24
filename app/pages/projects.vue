@@ -9,7 +9,7 @@ const page = {
 </script>
 
 <template>
-  <Navigation />
+  <!-- <Navigation /> -->
   <!-- Header -->
   <header class="header" role="banner">
     <div class="wrapper animated fadeIn">
