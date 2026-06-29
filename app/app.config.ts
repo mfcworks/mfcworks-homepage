@@ -6,7 +6,7 @@ export default defineAppConfig({
     description: "Moonrise is a fresh take on the classic Moon",
     reading_time: true,
     words_per_minute: 200,
-    logo: "/img/logo.png",
+    logo: "/img/logo.svg",
     background: "/img/moonrise-background.jpg",
     tiled_bg: false, // Set this true if you want to tile your background image, otherwise it will be covered
     locale: "en_US",
