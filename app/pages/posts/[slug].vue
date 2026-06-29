@@ -17,7 +17,8 @@ const date_to_string = (date: string | undefined) => date
   <header class="header" role="banner">
     <div class="wrapper animated fadeIn">
       <div class="content">
-        <div :class="`post-title ${page?.feature ? 'feature' : ''}`">
+        <div :class="`post-title ${page?.feature ? 'feature' : ''}`"
+          :style="`background-image: url(${page?.feature})`">
           <h1>{{ page?.title }}</h1>
           <h4>{{ date_to_string(page?.date) }}</h4>
 
@@ -26,10 +27,10 @@ const date_to_string = (date: string | undefined) => date
             <!-- TODO: {% include read-time.html %} -->
           </p><!-- /.entry-reading-time -->
 
-          <a class="btn zoombtn" href="{{site.url}}/projects/" v-if="page?.project">
+          <a class="btn zoombtn" href="/projects/" v-if="page?.project">
             <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
           </a>
-          <a class="btn zoombtn" href="{{site.url}}/posts/" v-else>
+          <a class="btn zoombtn" href="/posts/" v-else>
             <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
           </a>
         </div>

@@ -20,6 +20,9 @@ export default defineContentConfig({
       // Load every file inside the `content` directory
       source: 'news/*.md',
     }),
-
+    about: defineCollection({
+      type: 'page',
+      source: 'about.md'
+    })
   }
 })
