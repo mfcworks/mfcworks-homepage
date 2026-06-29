@@ -1,9 +1,9 @@
 export default defineAppConfig({
   site: {
     // Site
-    title: "Moonrise",
-    bio: "Minimal, one column jekyll theme.",
-    description: "Moonrise is a fresh take on the classic Moon",
+    title: "合同会社MFCWORKS",
+    bio: "FA電気制御設計 ＆ IoT/DXコンサルティング",
+    description: "FA電気制御設計 ＆ IoT/DXコンサルティング",
     reading_time: true,
     words_per_minute: 200,
     logo: "/img/logo.svg",
@@ -26,20 +26,20 @@ export default defineAppConfig({
     // ad-client:
     // ad-slot:
     // bing-verify:
-    // email:
-    twitter: "username",
-    facebook: "username",
-    github_url: "username",
+    email: "contact@mfcworks.com",
+    twitter: "mfcworks",
+    // facebook: "username",
+    github_url: "mfcworks",
     // stackoverflow: "123456/username",  // from a "http://stackoverflow.com/users/123456/username" link
     // linkedin: "username",
     // xing: "username",
-    instagram: "username",
+    // instagram: "username",
     // lastfm: "username",
     // tumblr: "username",
     // medium: '@username',
     // pinterest: "username",
     // foursquare: "username",
-    steam: "username",
+    // steam: "username",
     // dribbble: "username",
     // youtube: "username",
     // youtube_channel: "channel",
