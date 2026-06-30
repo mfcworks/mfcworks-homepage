@@ -18,13 +18,13 @@ export default defineNuxtConfig({
   },
 
   //
-  experimental: {
-    defaults: {
-      nuxtLink: {
-        trailingSlash: 'append'
-      }
-    }
-  },
+  // experimental: {
+  //   defaults: {
+  //     nuxtLink: {
+  //       trailingSlash: 'append'
+  //     }
+  //   }
+  // },
 
   modules: ['@nuxt/content'],
 })

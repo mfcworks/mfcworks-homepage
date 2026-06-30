@@ -26,14 +26,20 @@ const { site } = useAppConfig()
           <SocialLinks />
           <hr class="hr-line">
           <h3 class="title">
-            <NuxtLink class="btn zoombtn" to="/about/">
-            About
+            <NuxtLink class="btn zoombtn" to="/company">
+            会社概要
             </NuxtLink>
-            <a class="btn zoombtn" href="/posts/">
-              Posts
-            </a>
-            <NuxtLink class="btn zoombtn" to="/projects/">
-              Projects
+            <NuxtLink class="btn zoombtn" to="/service">
+            事業内容
+            </NuxtLink>
+            <NuxtLink class="btn zoombtn" to="/news">
+            ニュース
+            </NuxtLink>
+            <NuxtLink class="btn zoombtn" to="/technology">
+            技術事例
+            </NuxtLink>
+            <NuxtLink class="btn zoombtn" to="/contact">
+            お問い合わせ
             </NuxtLink>
           </h3>
         </div>

@@ -23,6 +23,27 @@ export default defineContentConfig({
     about: defineCollection({
       type: 'page',
       source: 'about.md'
+    }),
+
+    company: defineCollection({
+      type: 'page',
+      source: 'company.md'
+    }),
+    service: defineCollection({
+      type: 'page',
+      source: 'service.md'
+    }),
+    news: defineCollection({
+      type: 'page',
+      source: 'news.md'
+    }),
+    technology: defineCollection({
+      type: 'page',
+      source: 'technology.md'
+    }),
+    contact: defineCollection({
+      type: 'page',
+      source: 'contact.md'
     })
   }
 })
