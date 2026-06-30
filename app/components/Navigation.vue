@@ -6,9 +6,9 @@ const { site, navigation } = useAppConfig()
   <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
     <button class="dl-trigger">Open Menu</button>
     <ul class="dl-menu">
-      <li><a :href="`${site.url}`">Home</a></li>
+      <li><a :href="`${site.url}`">ホーム</a></li>
       <li>
-        <a href="#">About</a>
+        <a href="#">About MFCWORKS</a>
         <ul class="dl-submenu">
           <li class="dl-back"><a hreef="#">Back</a></li>
           <li>
@@ -16,7 +16,7 @@ const { site, navigation } = useAppConfig()
             <h4>{{ site.title }}</h4>
             <p>{{ site.description }}</p>
           </li>
-          <li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+          <li><a href="/company"><span class="btn btn-inverse">会社概要</span></a></li>
           <li v-if="site.email">
             <a :href="`mailto:${site.email}`" target="_blank" rel="noopener noreferrer"><i
                 class="fa fa-fw fa-envelope-square"></i> Email</a>
@@ -115,14 +115,14 @@ const { site, navigation } = useAppConfig()
           </li>
         </ul><!-- /.dl-submenu -->
       </li>
-      <li>
+      <!-- <li>
         <a href="#">Posts</a>
         <ul class="dl-submenu">
           <li class="dl-back"><a hreef="#">Back</a></li>
-          <li><a href="/posts/">All Posts</a></li>
+          <li><a href="/posts/">All Posts</a></li> -->
           <!-- <li><a href="/tags/">All Tags</a></li> -->
-        </ul>
-      </li>
+        <!-- </ul>
+      </li> -->
       <li v-for="link in navigation">
         <a v-if="link.url.includes('http')" :href="link.url" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
         <a v-else :href="link.url">{{ link.title }}</a>

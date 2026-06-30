@@ -54,6 +54,9 @@ export default defineAppConfig({
 
   // Site navigation links
   navigation: [
-    { title: 'Projects', url: '/projects/' },
+    { title: '事業内容', url: '/service' },
+    { title: 'ニュース', url: '/news' },
+    { title: '技術事例', url: '/technology' },
+    { title: 'お問い合わせ', url: '/contact' },
   ]
 })
