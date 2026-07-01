@@ -27,4 +27,20 @@ export default defineNuxtConfig({
   // },
 
   modules: ['@nuxt/content'],
+
+  nitro: {
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      wrangler: {
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_name: 'mfcworks-homepage',
+            database_id: 'a3fcbadb-6dd5-48e2-b5c0-228d39d96800'
+          }
+        ]
+      }
+    }
+  }
 })
