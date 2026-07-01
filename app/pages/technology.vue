@@ -9,7 +9,7 @@ const { data: page } = await useAsyncData('technology',
 <template>
   <!-- <Navigation /> -->
   <!-- Header -->
-  <header class="header" role="banner">
+  <header class="header" role="banner" v-if="page">
     <div class="wrapper animated fadeIn">
       <div class="content">
         <!-- <div class="post-title {% if page.feature %} feature {% endif %}"> -->
@@ -23,7 +23,7 @@ const { data: page } = await useAsyncData('technology',
         <ContentRenderer v-if="page" :value="page" />
       </div>
     </div>
-    <section id="disqus_thread" class="animated fadeInUp" v-if="page.comments && site.disqus_shortname"></section>
+    <!-- <section id="disqus_thread" class="animated fadeInUp" v-if="page.comments && site.disqus_shortname"></section> -->
     <!-- /#disqus_thread -->
   </header>
   <!-- {% include scripts.html %}

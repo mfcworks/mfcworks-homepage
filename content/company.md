@@ -4,6 +4,7 @@ title: 会社概要
 tags: []
 date: 2026-07-01
 comments: false
+feature: ""
 ---
 
 ## ごあいさつ

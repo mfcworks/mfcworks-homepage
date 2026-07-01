@@ -4,6 +4,7 @@ title: About the Theme
 tags: [about, Jekyll, theme, moon]
 date: 2024-02-11
 comments: false
+feature: ""
 ---
 
 <center><a href="http://TolgaTatli.github.io/Moonrise"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>

@@ -4,6 +4,7 @@ title: 事業内容
 tags: []
 date: 2026-07-01
 comments: false
+feature: ""
 ---
 
 ## 当社の事業について
