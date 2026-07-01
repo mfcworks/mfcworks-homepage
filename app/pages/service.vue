@@ -9,7 +9,7 @@ const { data: page } = await useAsyncData('service',
 <template>
   <!-- <Navigation /> -->
   <!-- Header -->
-  <header class="header" role="banner" v-if="page">
+  <header class="header" role="banner">
     <div class="wrapper animated fadeIn">
       <div class="content">
         <!-- <div class="post-title {% if page.feature %} feature {% endif %}"> -->
