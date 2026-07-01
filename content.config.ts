@@ -52,15 +52,6 @@ export default defineContentConfig({
         project: z.string()
       })
     }),
-    news: defineCollection({
-      type: 'page',
-      source: 'news.md',
-      schema: z.object({
-        feature: z.string(),
-        date: z.date(),
-        project: z.string()
-      })
-    }),
     technology: defineCollection({
       type: 'page',
       source: 'technology.md',

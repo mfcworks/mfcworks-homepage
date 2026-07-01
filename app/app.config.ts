@@ -4,7 +4,7 @@ export default defineAppConfig({
     title: "合同会社MFCWORKS",
     bio: "FA電気制御設計 ＆ IoT/DXコンサルティング",
     description: "FA電気制御設計 ＆ IoT/DXコンサルティング",
-    reading_time: true,
+    reading_time: false,
     words_per_minute: 200,
     logo: "/img/logo.svg",
     background: "/img/moonrise-background.jpg",

@@ -1,6 +1,6 @@
 <script setup>
 const { site } = useAppConfig()
-console.log('posts.vue')
+
 useHead({
   script: [
     { src: '/js/wow.min.js' },
@@ -8,12 +8,12 @@ useHead({
   ]
 })
 
-// Retrieve all post data from 'content/posts/*.md'
-const { data: posts } = await useAsyncData('posts', () => queryCollection('posts').all())
+// Retrieve all post data from 'content/news/*.md'
+const { data: posts } = await useAsyncData('news', () => queryCollection('news').order('date', 'DESC').all())
 
 const _page = {
-  title: 'All Posts',
-  excerpt: 'A List of Posts',
+  title: 'ニュース',
+  excerpt: 'A List of News',
   comments: false
 }
 </script>
@@ -33,9 +33,9 @@ const _page = {
         <div class="post-list">
           <ul v-for="post in posts">
             <li class="wow fadeInLeft" data-wow-duration="1.5s">
-              <a class="zoombtn" :href="post.path + '/'">{{ post.title }}</a>
+              <a class="zoombtn" :href="post.path">{{ post.date + '　' + post.title }}</a>
               <p>{{ post.description }}</p>
-              <a :href="post.path + '/'" class="btn zoombtn">Read More</a>
+              <a :href="post.path" class="btn zoombtn">Read More</a>
             </li>
           </ul>
         </div>
