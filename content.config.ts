@@ -19,31 +19,65 @@ export default defineContentConfig({
       type: 'page',
       // Load every file inside the `content` directory
       source: 'news/*.md',
+      schema: z.object({
+        feature: z.string(),
+        date: z.date(),
+        project: z.string()
+      })
     }),
     about: defineCollection({
       type: 'page',
-      source: 'about.md'
-    }),
+      source: 'about.md',
+      schema: z.object({
+        feature: z.string(),
+        date: z.date(),
+        project: z.string()
+      })    }),
 
     company: defineCollection({
       type: 'page',
-      source: 'company.md'
+      source: 'company.md',
+      schema: z.object({
+        feature: z.string(),
+        date: z.date(),
+        project: z.string()
+      })
     }),
     service: defineCollection({
       type: 'page',
-      source: 'service.md'
+      source: 'service.md',
+      schema: z.object({
+        feature: z.string(),
+        date: z.date(),
+        project: z.string()
+      })
     }),
     news: defineCollection({
       type: 'page',
-      source: 'news.md'
+      source: 'news.md',
+      schema: z.object({
+        feature: z.string(),
+        date: z.date(),
+        project: z.string()
+      })
     }),
     technology: defineCollection({
       type: 'page',
-      source: 'technology.md'
+      source: 'technology.md',
+      schema: z.object({
+        feature: z.string(),
+        date: z.date(),
+        project: z.string()
+      })
     }),
     contact: defineCollection({
       type: 'page',
-      source: 'contact.md'
+      source: 'contact.md',
+      schema: z.object({
+        feature: z.string(),
+        date: z.date(),
+        project: z.string()
+      })
     })
   }
 })
