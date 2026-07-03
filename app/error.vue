@@ -61,7 +61,7 @@ defineProps<{ error: NuxtError }>()
   {% endif %} -->
 </template>
 
-<style>
+<style scoped>
 /* <header>の中央寄せを再現 */
 #__nuxt {
   height: 100%;
