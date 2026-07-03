@@ -113,6 +113,11 @@ const { site, navigation } = useAppConfig()
             <a :href="`https://news.ycombinator.com/user?id=${site.hackernews}`" target="_blank"
               rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i> Hacker News</a>
           </li>
+          <li>
+            <p style="padding: 15px 10px">Original site theme: <br />
+              <a href="https://github.com/TolgaTatli/Moonrise" target="_blank" rel="noopener noreferrer">Moonrise by Tolga Tatli</a>
+            </p>
+          </li>
         </ul><!-- /.dl-submenu -->
       </li>
       <!-- <li>
