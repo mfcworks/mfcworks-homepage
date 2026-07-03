@@ -1,9 +1,5 @@
-<script lang="ts" setup>
-const { site } = useAppConfig()
-
-const { data: page } = await useAsyncData('technology',
-  () => queryCollection('technology').path('/technology').first()
-)
+<script setup lang="ts">
+defineProps(['page'])
 </script>
 
 <template>
@@ -15,7 +11,7 @@ const { data: page } = await useAsyncData('technology',
         <!-- <div class="post-title {% if page.feature %} feature {% endif %}"> -->
         <div :class="`post-title ${page.feature ? 'feature' : ''}`">
           <h1>{{ page.title }}</h1>
-          <a class="btn zoombtn" :href="site.url">
+          <a class="btn zoombtn" href="/">
             <i class="fa fa-chevron-left"></i>
           </a>
         </div>

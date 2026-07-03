@@ -54,7 +54,7 @@ export default defineContentConfig({
     }),
     technology: defineCollection({
       type: 'page',
-      source: 'technology.md',
+      source: 'technology/*.md',
       schema: z.object({
         feature: z.string(),
         date: z.date(),
