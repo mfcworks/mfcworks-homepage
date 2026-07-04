@@ -1,2 +1,13 @@
-@import "tailwindcss";
+/*
+  Tailwindの初期設定（Preflight）とMoonriseテーマのCSSが競合するので
+  preflight.cssがインポートされないようにする。
+  同名のクラス名が競合するのでTailwindのクラス名にprefix（tw:）を付ける。
+*/
+
+/* @import "tailwindcss" prefix(tw); */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+/* @import "tailwindcss/preflight.css" layer(base); */
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
+
 @import "@nuxt/ui";

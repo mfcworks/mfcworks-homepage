@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/sass/main.scss', '~/assets/ui.css'],
+  ui: {
+    theme: {
+      prefix: 'tw'
+    }
+  },
 
   // app: {
   //   head: {

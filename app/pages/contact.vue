@@ -1,9 +1,5 @@
 <script lang="ts" setup>
-const { site } = useAppConfig()
 
-const { data: page } = await useAsyncData('contact',
-  () => queryCollection('contact').path('/contact').first()
-)
 </script>
 
 <template>
@@ -13,14 +9,14 @@ const { data: page } = await useAsyncData('contact',
     <div class="wrapper animated fadeIn">
       <div class="content">
         <!-- <div class="post-title {% if page.feature %} feature {% endif %}"> -->
-        <div :class="`post-title ${page.feature ? 'feature' : ''}`">
-          <h1>{{ page.title }}</h1>
-          <a class="btn zoombtn" :href="site.url">
+        <div class="post-title">
+          <h1>お問い合わせ</h1>
+          <a class="btn zoombtn" href="/">
             <i class="fa fa-chevron-left"></i>
           </a>
         </div>
         <!-- {{ content }} -->
-        <ContentRenderer v-if="page" :value="page" />
+        <ContactForm />
       </div>
     </div>
     <!-- <section id="disqus_thread" class="animated fadeInUp" v-if="page.comments && site.disqus_shortname"></section> -->
