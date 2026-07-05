@@ -40,14 +40,25 @@ function onModify() {
   }
 }
 
+let submitResult = ref(false)
+let submitError = ref('')
+
 // 「送信する」ボタン
-function onSend() {
+async function onSend() {
+  // API送信
+  const { data: result } = await useFetch('/api/submit', {
+    method: 'POST',
+    body: JSON.stringify(state)
+  })
+  // 送信結果取得
+  if (result) {
+    submitResult.value = result.value?.succeed || false
+    submitError.value = result.value?.errorMessage || '不明なエラー'
+  }
+  // 画面遷移
   if (step.value === 'CONFIRM') {
     step.value = 'COMPLETE'
   }
-
-
-  
 }
 </script>
 
@@ -158,14 +169,24 @@ function onSend() {
   <UContainer class="tw:max-w-3xl-12" v-else-if="step === 'COMPLETE'">
     <UCard>
       <template #header>
-        <p class="tw:mt-2 tw:text-sm tw:text-gray-500">
+        <p class="tw:mt-2 tw:text-sm tw:text-gray-500" v-if="submitResult">
           送信完了
+        </p>
+        <p class="tw:mt-2 tw:text-sm tw:text-gray-500" v-else>
+          送信エラー
         </p>
       </template>
 
-      <p>お問い合わせいただき、ありがとうございました。</p>
-      <p>内容確認し、３～５営業日以内に担当者よりご連絡差し上げます。</p>
-      <p>今しばらくお待ちいただけますようお願いいたします。</p>
+      <div v-if="submitResult">
+        <p>お問い合わせいただき、ありがとうございました。</p>
+        <p>内容確認し、３～５営業日以内に担当者よりご連絡差し上げます。</p>
+        <p>今しばらくお待ちいただけますようお願いいたします。</p>
+      </div>
+      <div v-else>
+        <p>エラーが発生しました。</p>
+        <p>エラー原因：{{ submitError }}</p>
+        <p>お手数ですが、しばらく時間をおいてから再度お試しください。</p>
+      </div>
     </UCard>
   </UContainer>
 
