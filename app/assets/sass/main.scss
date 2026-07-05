@@ -10,7 +10,7 @@
  *  WEB: http://tolgatatli.dev
  *
 */
-
+@layer moon {
 // Partials
 @import "variables";
 @import "mixins";
@@ -25,4 +25,4 @@
 @import "vendor/animate";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
-
+}

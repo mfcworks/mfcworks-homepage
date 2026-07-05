@@ -31,7 +31,10 @@ export default defineNuxtConfig({
   //   }
   // },
 
-  modules: ['@nuxt/content', '@nuxt/ui'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/content',
+  ],
 
   nitro: {
     preset: 'cloudflare_module',
