@@ -1,4 +1,9 @@
 export default defineAppConfig({
+  ui: {
+    colors: {
+      primary: 'cyan'
+    }
+  },
   site: {
     // Site
     title: "合同会社MFCWORKS",
