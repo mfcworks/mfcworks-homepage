@@ -61,9 +61,9 @@ export default defineContentConfig({
         project: z.string()
       })
     }),
-    contact: defineCollection({
+    privacy: defineCollection({
       type: 'page',
-      source: 'contact.md',
+      source: 'privacy.md',
       schema: z.object({
         feature: z.string(),
         date: z.date(),
