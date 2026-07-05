@@ -22,8 +22,9 @@ const state = reactive<Partial<Schema>>({
   message: '',
 })
 
+const agree = ref(false)
+
 const step = ref<'INPUT' | 'CONFIRM' | 'COMPLETE'>('INPUT')
-console.log('Step:', step.value)
 
 // 「確認画面へ」ボタン
 function onConfirm() {
@@ -87,7 +88,7 @@ function onSend() {
         <UFormField name="agree" required>
           <div class="tw:relative tw:flex tw:items-start tw:flex-row">
             <div class="checkbox-wrapper tw:flex tw:items-center tw:h-5">
-              <UCheckbox required class="tw:flex-none" />
+              <UCheckbox v-model="agree" required class="tw:flex-none" />
             </div>
             <div class="tw:w-full tw:ms-4 tw:text-sm">
               <label class="tw:block tw:font-medium tw:text-default tw:after:content-['*'] tw:after:ms-0.5 tw:after:text-error">
@@ -148,7 +149,7 @@ function onSend() {
 
       <div class="button-wrapper tw:flex tw:gap-6 tw:justify-center tw:pt-6">
         <UButton @click="onModify" size="lg" color="neutral" variant="outline">修正する</UButton>
-        <UButton @click="onSend" size="lg">送信する</UButton>
+        <UButton @click="onSend" size="lg" class="tw:font-bold">送信する</UButton>
       </div>
     </UCard>
   </UContainer>
