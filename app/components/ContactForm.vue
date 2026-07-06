@@ -40,20 +40,24 @@ function onModify() {
   }
 }
 
+let submitted = ref(false)
 let submitResult = ref(false)
 let submitError = ref('')
 
 // 「送信する」ボタン
 async function onSend() {
+  // ボタン無効化
+  submitted.value = true
+
   // API送信
-  const { data: result } = await useFetch('/api/submit', {
+  const result = await $fetch('/api/submit', {
     method: 'POST',
     body: JSON.stringify(state)
   })
   // 送信結果取得
   if (result) {
-    submitResult.value = result.value?.succeed || false
-    submitError.value = result.value?.errorMessage || '不明なエラー'
+    submitResult.value = result.success || false
+    submitError.value = result.errorMessage || '不明なエラー'
   }
   // 画面遷移
   if (step.value === 'CONFIRM') {
@@ -159,8 +163,8 @@ async function onSend() {
       </table>
 
       <div class="button-wrapper tw:flex tw:gap-6 tw:justify-center tw:pt-6">
-        <UButton @click="onModify" size="lg" color="neutral" variant="outline">修正する</UButton>
-        <UButton @click="onSend" size="lg" class="tw:font-bold">送信する</UButton>
+        <UButton @click="onModify" size="lg" color="neutral" variant="outline" :disabled="submitted">修正する</UButton>
+        <UButton @click="onSend" size="lg" class="tw:font-bold" :disabled="submitted">送信する</UButton>
       </div>
     </UCard>
   </UContainer>

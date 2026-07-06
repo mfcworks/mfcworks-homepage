@@ -50,5 +50,9 @@ export default defineNuxtConfig({
         ]
       }
     }
+  },
+
+  runtimeConfig: {
+    resendApiKey: ''
   }
 })
